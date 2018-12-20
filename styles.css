@@ -18,3 +18,14 @@ article {
   flex-basis: 60%;
   background-color: red;
 }
+
+nav {
+  flex-basis: 20%;
+  background-color: orange;
+  order: -1;
+}
+
+aside {
+  flex-basis: 20%;
+  background-color: yellow;
+}
