@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, footer {
+  background-color: blue;
+}
+
+main {
+  display: flex;
+
+}
+
+article {
+  flex-basis: 60%;
+  background-color: red;
+}
