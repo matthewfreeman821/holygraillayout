@@ -19,15 +19,29 @@ main {
 article {
   flex-basis: 60%;
   background-color: red;
+  flex-grow: 4;
 }
 
 nav {
   flex-basis: 20%;
   background-color: orange;
   order: -1;
+  flex-grow: 1;
 }
 
 aside {
   flex-basis: 20%;
   background-color: yellow;
+  flex-grow: 1;
+}
+
+@media all and (max-width: 640px) {
+  
+  main {
+    flex-direction: column;
+  }
+
+  nav {
+    order: 0;
+  }
 }
