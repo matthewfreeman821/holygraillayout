@@ -5,6 +5,12 @@ body {
   min-height: 100vh;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 header, footer {
   background-color: blue;
   flex-basis: 50px;
@@ -13,26 +19,22 @@ header, footer {
 main {
   display: flex;
   min-height: 650px;
-
 }
 
 article {
-  flex-basis: 60%;
+  flex: 4 0 60%;
   background-color: red;
-  flex-grow: 4;
 }
 
 nav {
-  flex-basis: 20%;
+  flex: 1 1 20%;
   background-color: orange;
   order: -1;
-  flex-grow: 1;
 }
 
 aside {
-  flex-basis: 20%;
+  flex: 1 1 20%;
   background-color: yellow;
-  flex-grow: 1;
 }
 
 @media all and (max-width: 640px) {
