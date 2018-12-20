@@ -7,10 +7,12 @@ body {
 
 header, footer {
   background-color: blue;
+  flex-basis: 50px;
 }
 
 main {
   display: flex;
+  min-height: 650px;
 
 }
 
