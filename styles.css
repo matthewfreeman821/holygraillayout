@@ -5,15 +5,21 @@ body {
   min-height: 100vh;
 }
 
+header, footer {
+  background-color: #1ABC9C;
+  flex-basis: 50px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header, footer {
-  background-color: blue;
-  flex-basis: 50px;
+main > *, header, footer {
+  margin: 4px;
+  padding: 5px;
+  border-radius: 7px;
 }
 
 main {
@@ -23,18 +29,18 @@ main {
 
 article {
   flex: 4 0 60%;
-  background-color: red;
+  background-color: #ECF0F1;
 }
 
 nav {
   flex: 1 1 20%;
-  background-color: orange;
+  background-color: #95A5A6;
   order: -1;
 }
 
 aside {
   flex: 1 1 20%;
-  background-color: yellow;
+  background-color: #3498DB;
 }
 
 @media all and (max-width: 640px) {
